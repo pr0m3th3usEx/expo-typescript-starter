@@ -9,7 +9,10 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "lint": "eslint ./**/*.{tsx,ts}",
-    "lint:fix": "eslint --fix ./**/*.{tsx,ts}"
+    "lint:fix": "eslint --fix ./**/*.{tsx,ts}",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch --passWithNoTests",
+    "test:cov": "jest --coverage --passWithNoTests"
   },
   "dependencies": {
     "expo": "~45.0.0",
@@ -39,6 +42,7 @@
     "jest": "^28.1.0",
     "jest-expo": "^45.0.1",
     "prettier": "^2.6.2",
+    "react-test-renderer": "17",
     "typescript": "~4.3.5"
   },
   "private": true
